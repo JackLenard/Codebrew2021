@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom';
 
 function English(){
   const history = useHistory();
-  const handleClick = () => history.push('/English');
+  const handleClick = () => history.push('/EnglishChat');
   return(
   <div>
   <Card style={{ width: '18rem', backgroundColor: 'Danger'  }}>

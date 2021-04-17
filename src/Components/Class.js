@@ -3,7 +3,8 @@ import Col from 'react-bootstrap/Col';
 import React from 'react';
 import English from './English';
 import Maths from './Maths';
-import Link from 'react-router-dom';
+import Science from './Science';
+import Arts from './Arts';
 
 function Class(){
   return(
@@ -13,10 +14,9 @@ function Class(){
     <Col><Maths/></Col>
   </Row>
   <Row>
-  <Col><Arts/></Col>
+    <Col><Arts/></Col>
   <Col><Science/></Col>
 </Row>
-
   </div>);
 }
 export default Class;

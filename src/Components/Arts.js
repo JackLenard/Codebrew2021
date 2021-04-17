@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom';
 
 function Arts(){
   const history = useHistory();
-  const handleClick = () => history.push('/Arts');
+  const handleClick = () => history.push('/ArtsChat');
   return(
   <div>
   <Card style={{ width: '18rem', backgroundColor: 'Danger'  }}>
