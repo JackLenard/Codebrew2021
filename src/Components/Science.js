@@ -11,7 +11,7 @@ function Science(){
   <Card style={{ width: '18rem', backgroundColor: 'Danger'  }}>
     <Card.Body>
       <Card.Title>Science class</Card.Title>
-      <Button variant="primary" onClick = {handleClick}>Enter your class now</Button>
+      <Button variant="primary" onClick = {handleClick}>Enter the chat</Button>
     </Card.Body>
   </Card>
   </div>);

@@ -10,7 +10,7 @@ function Maths(){
   <Card style={{ width: '18rem', backgroundColor: 'Primary'}}>
     <Card.Body>
       <Card.Title>Math class</Card.Title>
-      <Button variant="primary" onClick = {handleClick}>Enter your class now</Button>
+      <Button variant="primary" onClick = {handleClick}>Enter the chat</Button>
     </Card.Body>
   </Card>
   </div>);

@@ -11,7 +11,7 @@ function English(){
   <Card style={{ width: '18rem', backgroundColor: 'Danger'  }}>
     <Card.Body>
       <Card.Title>English class</Card.Title>
-      <Button variant="primary" onClick = {handleClick}>Enter your class now</Button>
+      <Button variant="primary" onClick = {handleClick}>Enter the chat</Button>
     </Card.Body>
   </Card>
   </div>);

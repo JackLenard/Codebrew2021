@@ -2,12 +2,19 @@ import React, { useState } from 'react';
 import Button from "react-bootstrap/Button";
 import { useHistory } from 'react-router-dom';
 
+const divStyle = {
+    textAlign: 'center',
+    paddingTop: '200px',
+};
+
 function Login() {
+    
     const [name,setName] = useState("");
     const [password,setPassword] = useState("");
     //const [isMouseOver, setMouseOver] = useState(false);
     const history = useHistory();
-  const handleClick = () => history.push('/Home');
+    const handleClick = () => history.push('/Home');
+
     function handleChange(event) {
         console.log(event.target.value);
     }
@@ -17,7 +24,7 @@ function Login() {
     //}
 
     return (
-        <div className="Login">
+        <div className="Login" style={divStyle}>
 
             <h1>Login</h1>
             <form>
@@ -32,7 +39,7 @@ function Login() {
                 <input // password text box
                 onChange={handleChange}
                 //onChange={(e) => setPassword(e.target.value)}
-                type="text"
+                type="password"
                 placeholder="Password"
                 />
             <Button variant="primary" onClick = {handleClick}>Submit</Button>
