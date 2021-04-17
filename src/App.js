@@ -1,11 +1,12 @@
 import './App.css';
 import Navigation from  './Components/Navigation';
 import Class from './Components/Class';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import MathsChat from './Components/MathsChat';
 import EnglishChat from './Components/EnglishChat';
 import ScienceChat from './Components/ScienceChat';
 import ArtsChat from './Components/ArtsChat';
+import Login from './Components/Login'; 
 /*import Conference from './Components/Conference';
 import BossRoom from './Components/BossRoom';*/
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -13,11 +14,13 @@ function App() {
   return (
     <div className="App">
     <Navigation  />
-    <Router>
        <Switch>
          <Route path="/" exact>
-           <Class/>
+           <Login /> 
          </Route>
+         <Route path = "/class" exact>
+             <Class />
+        </Route> 
          <Route path="/MathsChat" exact>
            <MathsChat />
          </Route>
@@ -31,7 +34,6 @@ function App() {
            <EnglishChat />
          </Route>
        </Switch>
-     </Router>
    </div>
   );
 }
