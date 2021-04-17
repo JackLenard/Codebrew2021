@@ -5,13 +5,13 @@ import { useHistory } from 'react-router-dom';
 
 function Science(){
   const history = useHistory();
-  const handleClick = () => history.push('/Science');
+  const handleClick = () => history.push('/ScienceChat');
   return(
   <div>
   <Card style={{ width: '18rem', backgroundColor: 'Danger'  }}>
     <Card.Body>
-      <Card.Title>Art class</Card.Title>
-      <Button variant="primary" onclick = {handleClick}>Enter your class now</Button>
+      <Card.Title>Science class</Card.Title>
+      <Button variant="primary" onClick = {handleClick}>Enter your class now</Button>
     </Card.Body>
   </Card>
   </div>);

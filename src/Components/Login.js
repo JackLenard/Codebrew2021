@@ -1,40 +1,24 @@
 import React, { useState } from 'react';
-import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { useHistory } from 'react-router-dom';
 
 function Login() {
-    
-    const [name] = useState("");
-    const [password] = useState("");
-    const [isMouseOver, setMouseOver] = useState(false);
+    const [name,setName] = useState("");
+    const [password,setPassword] = useState("");
+    //const [isMouseOver, setMouseOver] = useState(false);
     const history = useHistory();
-    
+  const handleClick = () => history.push('/Home');
     function handleChange(event) {
         console.log(event.target.value);
     }
 
-    // handle the click of submit button
-    function handleClick() {
-        history.push('/class');
-    }
-
-    function handleMouseOver() {
-        setMouseOver(true);
-    }
-
-    function handleMouseOut() {
-        setMouseOver(false)
-    }
-    
-    function validateForm() {
-        return name.length > 0 && password.length > 0;
-    }
+    //function validateForm() {
+        //return name.length > 0 && password.length > 0;
+    //}
 
     return (
         <div className="Login">
-            
+
             <h1>Login</h1>
             <form>
                 <input // username text box
@@ -42,7 +26,6 @@ function Login() {
                 // onChange={(e) => setName(e.target.value)}
                 type="text"
                 placeholder="Username"
-                value={name}
                 />
 
 
@@ -51,17 +34,8 @@ function Login() {
                 //onChange={(e) => setPassword(e.target.value)}
                 type="text"
                 placeholder="Password"
-                value={password}
                 />
-
-                <button
-                style={{ backgroundColor : isMouseOver ? "white" : "blue"}}
-                onClick={handleClick}
-                onMouseOver={handleMouseOver}
-                onMouseOut={handleMouseOut}
-                disabled={!validateForm()}>
-                Submit
-                </button>
+            <Button variant="primary" onClick = {handleClick}>Submit</Button>
             </form>
         </div>
     );

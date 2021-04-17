@@ -2,13 +2,37 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import MathsChat from './Components/MathsChat';
+import EnglishChat from './Components/EnglishChat';
+import ScienceChat from './Components/ScienceChat';
+import ArtsChat from './Components/ArtsChat';
+import Login from './Components/Login';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+  <Router>
+  <Switch>
+    <Route path="/" exact>
+      <Login />
+    </Route>
+    <Route path = "/Home">
         <App />
-    </BrowserRouter>
+   </Route>
+    <Route path="/MathsChat">
+      <MathsChat />
+    </Route>
+    <Route path="/ArtsChat">
+      <ArtsChat />
+    </Route>
+    <Route path="/ScienceChat">
+      <ScienceChat />
+    </Route>
+    <Route path="/EnglishChat">
+      <EnglishChat />
+    </Route>
+  </Switch>
+  </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
