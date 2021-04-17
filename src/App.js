@@ -1,22 +1,14 @@
 import './App.css';
-
+import Navigation from  './Components/Navigation';
+import Class from './Components/Class';
+/*import Conference from './Components/Conference';
+import BossRoom from './Components/BossRoom';*/
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Navigation  />
+    <Class />
     </div>
   );
 }
