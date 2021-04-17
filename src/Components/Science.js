@@ -10,8 +10,8 @@ function Science(){
   <div>
   <Card style={{ width: '18rem', backgroundColor: 'Danger'  }}>
     <Card.Body>
-      <Card.Title>Art class</Card.Title>
-      <Button variant="primary" onclick = {handleClick}>Enter your class now</Button>
+      <Card.Title>Science Class</Card.Title>
+      <Button variant="primary" href = '/ScienceChat'>Enter your class now</Button>
     </Card.Body>
   </Card>
   </div>);

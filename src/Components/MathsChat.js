@@ -1,7 +1,7 @@
 import React from "react";
 function MathsChat(){
   return(
-    <p>Hello</p>
+    <p>This is the math chat</p>
   );
 }
 export default MathsChat;

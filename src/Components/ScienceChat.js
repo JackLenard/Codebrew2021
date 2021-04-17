@@ -1,7 +1,7 @@
 import React from "react";
 function ScienceChat(){
   return(
-    <p>Hello</p>
+    <p>This is the science chat</p>
   );
 }
 export default ScienceChat;

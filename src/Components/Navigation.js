@@ -9,9 +9,9 @@ function Navigation (){
   return(
     <div>
     <Navbar class = "Navbar" bg="primary" variant="dark">
-       <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+       <Navbar.Brand href="/">Navbar</Navbar.Brand>
        <Nav className="mr-auto">
-         <Nav.Link href="#home">Home</Nav.Link>
+         <Nav.Link href="/">Home</Nav.Link>
        </Nav>
        <Nav className="ml-auto">
          <Nav.Link href="#login">Login</Nav.Link>

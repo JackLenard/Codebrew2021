@@ -8,7 +8,7 @@ function Maths(){
   <Card style={{ width: '18rem', backgroundColor: 'Primary'}}>
     <Card.Body>
       <Card.Title>Math class</Card.Title>
-      <Button variant="primary">Enter your class now</Button>
+      <Button variant="primary" href = '/MathsChat'>Enter your class now</Button>
     </Card.Body>
   </Card>
   </div>);
