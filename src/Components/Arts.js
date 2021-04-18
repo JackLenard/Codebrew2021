@@ -11,7 +11,15 @@ function Arts(){
   <Card style={{ width: '18rem', backgroundColor: 'Danger'  }}>
     <Card.Body>
       <Card.Title>Art class</Card.Title>
+<<<<<<< Updated upstream
       <Button variant="primary" href = '/ArtsChat'>Enter your class now</Button>
+=======
+<<<<<<< HEAD
+      <Button variant="primary" onClick = {handleClick}>Enter the chat</Button>
+=======
+      <Button variant="primary" href = '/ArtsChat'>Enter your class now</Button>
+>>>>>>> main
+>>>>>>> Stashed changes
     </Card.Body>
   </Card>
   </div>);
